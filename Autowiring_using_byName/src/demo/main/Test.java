@@ -11,7 +11,7 @@ public class Test {
 
 		ApplicationContext ac=new ClassPathXmlApplicationContext("beans.xml");
 		 Student s=(Student) ac.getBean("s");
-		 
+		  System.out.println("welcome");
 		 System.out.println(s.getRollno());
 		 System.out.println(s.getAdr().getLocalAddress());
          System.out.println(s.getAdr().getPermentAddress());
