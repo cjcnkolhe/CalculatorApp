@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="adr" class="demo.pojo.Address">
+        <property name="localAddress" value="karvenagar"></property>
+        <property name="permentAddress" value="Nasik"></property>
+        </bean>
+        
+        <bean id="s" class="demo.pojo.Student" autowire="byName">
+        <property name="rollno" value="1"></property>
+     
+        </bean>
+        
+        
+        </beans>
